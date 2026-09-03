@@ -1,0 +1,92 @@
+{
+  "id": "1eb64177-3674-48f0-9c68-9f9d4e9fbc00",
+  "title": "Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu",
+  "first_published_at": "2026-09-02T19:40:34Z",
+  "last_published_at": "2026-09-02T20:01:21Z",
+  "article_count": 2,
+  "source_family_count": 2,
+  "score": 23.169925,
+  "score_factors": {
+    "article_count": 2,
+    "coverage_score": 3.169925,
+    "ranking_version": "source-family-v1",
+    "source_family_count": 2,
+    "source_family_score": 20.0
+  },
+  "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+  "ranking_version": "source-family-v1",
+  "created_at": "2026-09-02T22:23:32.493669Z",
+  "updated_at": "2026-09-02T22:27:09.161480Z",
+  "articles": [
+    {
+      "id": "57feca3d-f180-40c4-a410-d7234003cc2a",
+      "title": "V obci Naháč vypukol požiar v areáli družstva, na mieste zasahujú desiatky hasičov",
+      "url": "https://www.aktuality.sk/clanok/o3iquHa/v-obci-nahac-vypukol-poziar-v-areali-druzstva-na-mieste-zasahuju-desiatky-hasicov",
+      "author": null,
+      "published_at": "2026-09-02T19:40:34Z",
+      "discovered_at": "2026-09-02T22:20:06.489343Z",
+      "text_scope": "rss",
+      "source_id": "aktuality",
+      "source_name": "Aktuality.sk",
+      "source_family": "aktuality",
+      "similarity": 1.0,
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "assigned_at": "2026-09-02T22:23:32.493669Z"
+    },
+    {
+      "id": "cbe1ef5b-9142-4fb2-95cb-6fd60ed66c4a",
+      "title": "Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu",
+      "url": "https://www.pravda.sk/spravy/regiony/clanok/2034767-velky-poziar-pri-trnave-hasici-hovoria-o-narocnom-zasahu",
+      "author": "TASR",
+      "published_at": "2026-09-02T20:01:21Z",
+      "discovered_at": "2026-09-02T22:20:07.658682Z",
+      "text_scope": "rss",
+      "source_id": "pravda_spravy",
+      "source_name": "Pravda Správy",
+      "source_family": "pravda",
+      "similarity": 0.8636104865757164,
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "assigned_at": "2026-09-02T22:27:09.161480Z"
+    }
+  ],
+  "revisions": [
+    {
+      "id": 35,
+      "reason": "assignment",
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "snapshot": {
+        "score": 12.0,
+        "title": "V obci Naháč vypukol požiar v areáli družstva, na mieste zasahujú desiatky hasičov",
+        "article_count": 1,
+        "score_factors": {
+          "article_count": 1,
+          "coverage_score": 2.0,
+          "ranking_version": "source-family-v1",
+          "source_family_count": 1,
+          "source_family_score": 10.0
+        },
+        "source_family_count": 1
+      },
+      "created_at": "2026-09-02T22:23:32.493669Z"
+    },
+    {
+      "id": 53,
+      "reason": "assignment",
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "snapshot": {
+        "score": 23.169925,
+        "title": "Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu",
+        "article_count": 2,
+        "score_factors": {
+          "article_count": 2,
+          "coverage_score": 3.169925,
+          "ranking_version": "source-family-v1",
+          "source_family_count": 2,
+          "source_family_score": 20.0
+        },
+        "source_family_count": 2
+      },
+      "created_at": "2026-09-02T22:27:09.161480Z"
+    }
+  ]
+}

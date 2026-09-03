@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-09-03T00:49:00+02:00",
+  "outcome": "verified_vertical_backend",
+  "release_ready": false,
+  "runtime": {
+    "sources": 4,
+    "independent_source_families": 3,
+    "articles": 56,
+    "embeddings": 56,
+    "stories": 51,
+    "story_memberships": 56,
+    "multi_source_stories": 5,
+    "checkpoint": 56,
+    "completed_runs": 9,
+    "deliberate_failed_run_probes": 1,
+    "worker_running": false
+  },
+  "verification": {
+    "unit_tests_passed": 13,
+    "ruff": "passed",
+    "mypy_source_files": 16,
+    "mypy": "passed",
+    "secret_scan_text_files": 60,
+    "secret_scan": "passed",
+    "empty_database_migration": "0004_feed_snapshots",
+    "empty_database_public_tables": 11,
+    "idempotent_replay": "20 received, 20 skipped, 0 created",
+    "concurrent_reconciliation": "serialized; one replay plus one new entry; no duplicates",
+    "api_restart_persistence": "passed",
+    "worker_restart_persistence": "passed; worker stopped afterward",
+    "snapshot_mutation_traversal": "51 stories, 51 unique while rescoring and inserting a story fixture"
+  },
+  "benchmark": {
+    "review_status": "provisional",
+    "items": 22,
+    "selected": "temporal-centroid@0.83",
+    "pairwise_precision": 1.0,
+    "pairwise_recall": 0.8333,
+    "pairwise_f1": 0.9091,
+    "false_merges": 0,
+    "false_splits": 1,
+    "lexical_baseline_recall": 0.5
+  },
+  "known_boundaries": [
+    "Benchmark labels still require Adam's editorial ratification.",
+    "The bounded benchmark window has no verified article update-over-time example.",
+    "Webhook acceleration is disabled and was not tested.",
+    "The current alpha processes synchronously and has no durable per-stage job/outbox table.",
+    "No SBOM has been generated; this is not a release build.",
+    "The pre-existing v0 worktree is dirty; this build issued no write command against it."
+  ]
+}

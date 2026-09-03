@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-09-02T22:48:08.808697+00:00",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimensions": 384,
+  "file_count": 19,
+  "total_bytes": 504279920,
+  "aggregate_sha256": "0bd9bb070dc8a6094860fd5cfabf3da1c7b515c9b090d57bfd317f5ec4ae4ef0",
+  "files": [
+    {
+      "path": ".locks/models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/5b496dbbbe502a10e2d64525481c6f444d125403.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".locks/models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/634d0f66c29dc934c8fa72b8a4fe91dd4d420a22f1d82a241058d4316e659a99.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".locks/models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/6af3e8bba20e4425103afb1ae3dee3cacdbe7afb.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".locks/models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/b1879d702821e753ffe4245048eee415d54a9385.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".locks/models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/fa685fc160bbdbab64058d4fc91b60e62d207e8dc60b9af5c002c5ab946ded00.lock",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CACHEDIR.TAG",
+      "size": 191,
+      "sha256": "f6572428f6d5e1575e73a1502895a8731f10757dfbb634909c6e154b849af91d"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/blobs/5b496dbbbe502a10e2d64525481c6f444d125403",
+      "size": 673,
+      "sha256": "c8ec081fdad2df991bf5abbf18418fec7a5cdaa421f60ffb060a30040b8c376f"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/blobs/634d0f66c29dc934c8fa72b8a4fe91dd4d420a22f1d82a241058d4316e659a99",
+      "size": 235052644,
+      "sha256": "634d0f66c29dc934c8fa72b8a4fe91dd4d420a22f1d82a241058d4316e659a99"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/blobs/6af3e8bba20e4425103afb1ae3dee3cacdbe7afb",
+      "size": 1416,
+      "sha256": "0666eebf692422757e1dddf3c9fb1ded73ba3dc726c5828671fc89e45bf3609f"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/blobs/b1879d702821e753ffe4245048eee415d54a9385",
+      "size": 964,
+      "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/blobs/fa685fc160bbdbab64058d4fc91b60e62d207e8dc60b9af5c002c5ab946ded00",
+      "size": 17083009,
+      "sha256": "fa685fc160bbdbab64058d4fc91b60e62d207e8dc60b9af5c002c5ab946ded00"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/files_metadata.json",
+      "size": 726,
+      "sha256": "7f5afc81f4d80b6ef760a1073561724e9cf8cafcab8a85d7523997e672a6b864"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/refs/main",
+      "size": 40,
+      "sha256": "f5719ccbb70b50cf31f07542d53c3f498e8ee4f420527130b74c666f8dd80860"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/snapshots/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json",
+      "size": 673,
+      "sha256": "c8ec081fdad2df991bf5abbf18418fec7a5cdaa421f60ffb060a30040b8c376f"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/snapshots/faf4aa4225822f3bc6376869cb1164e8e3feedd0/model_optimized.onnx",
+      "size": 235052644,
+      "sha256": "634d0f66c29dc934c8fa72b8a4fe91dd4d420a22f1d82a241058d4316e659a99"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/snapshots/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json",
+      "size": 964,
+      "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/snapshots/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer.json",
+      "size": 17083009,
+      "sha256": "fa685fc160bbdbab64058d4fc91b60e62d207e8dc60b9af5c002c5ab946ded00"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/snapshots/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json",
+      "size": 1416,
+      "sha256": "0666eebf692422757e1dddf3c9fb1ded73ba3dc726c5828671fc89e45bf3609f"
+    },
+    {
+      "path": "models--qdrant--paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/trees/faf4aa4225822f3bc6376869cb1164e8e3feedd0.json",
+      "size": 1551,
+      "sha256": "8554c64e76b7108fe08d2be4ce180e285cbd8b40f4ca9113a5d5ec903cb7cd54"
+    }
+  ]
+}

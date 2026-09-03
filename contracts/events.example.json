@@ -1,0 +1,230 @@
+{
+  "contract_version": "events-v1",
+  "filtered_count": 54,
+  "items": [
+    {
+      "id": "d1cb9998-dab6-4233-8d93-d6c1db0e9712",
+      "version": 2,
+      "title": "Aj s vaším rozpočtom september dokáže zamávať? Toto vášmu účtu uľaví",
+      "summary": "Pre rodinnú peňaženku september nemusí byť takou pohromou. Stačí nakupovať v Kauflande, ktorý znížil ceny vyše tisíc výrobkom. A na konečnej účtenke ten rozdiel zbadáte.",
+      "actors": [
+        "Toto"
+      ],
+      "organizations": [],
+      "location": null,
+      "occurred_start": "2026-09-02T22:32:28Z",
+      "occurred_end": "2026-09-02T22:32:28Z",
+      "action_types": [
+        "reported_development"
+      ],
+      "institutional_status": null,
+      "confidence": 1.0,
+      "novelty": "new",
+      "evidence_strength": "single_source",
+      "article_count": 1,
+      "source_family_count": 1,
+      "independent_source_family_count": 1,
+      "algorithm_version": "temporal-centroid-v1:threshold=0.83",
+      "conflicts": [],
+      "created_at": "2026-09-03T01:23:36.718637Z",
+      "updated_at": "2026-09-03T01:23:36.718637Z",
+      "lifecycle_state": "active",
+      "has_suggestions": false,
+      "syndicated_article_count": 0,
+      "timeline": [
+        {
+          "occurred_at": "2026-09-02T22:32:28Z",
+          "action_type": "reported_development",
+          "institutional_status": null,
+          "relation": "unrelated",
+          "candidate_id": "28fb31e4-0a72-470a-bc43-ac8651d704c4"
+        }
+      ],
+      "evidence": [
+        {
+          "candidate_id": "28fb31e4-0a72-470a-bc43-ac8651d704c4",
+          "exact_excerpt": "Pre rodinnú peňaženku september nemusí byť takou pohromou. Stačí nakupovať v Kauflande, ktorý znížil ceny vyše tisíc výrobkom. A na konečnej účtenke ten rozdiel zbadáte.",
+          "excerpt_start": 0,
+          "excerpt_end": 169,
+          "action_type": "reported_development",
+          "institutional_status": null,
+          "occurred_at": "2026-09-02T22:32:28Z",
+          "article_id": "c1387bee-5224-4a73-bc42-d0b4a8ba6f1c",
+          "article_title": "Aj s vaším rozpočtom september dokáže zamávať? Toto vášmu účtu uľaví",
+          "url": "https://www.pravda.sk/spravy/inzercia/clanok/2033355-aj-s-vasim-rozpoctom-september-dokaze-zamavat-toto-vasmu-uctu-ulavi",
+          "published_at": "2026-09-02T22:32:28Z",
+          "discovered_at": "2026-09-02T22:34:51.714088Z",
+          "revision_number": 1,
+          "content_hash": "c544070eebd403afd044130415fdc291990bb2f27d0948f643b7e55ba6db093a",
+          "source_id": "pravda_spravy",
+          "source_name": "Pravda Správy",
+          "source_family": "pravda",
+          "relation": "unrelated",
+          "decision_id": "137f3e2f-ec10-4ba3-a984-e722d6ea9621",
+          "decision_score": 0.297238,
+          "decision_status": "accepted",
+          "decision_reason": "no material event or topic overlap",
+          "decision_features": {
+            "update_signal": true,
+            "entity_overlap": 0.0,
+            "location_match": false,
+            "status_changed": false,
+            "time_proximity": 0.8999421296296296,
+            "text_similarity": 0.009592326139088728,
+            "title_similarity": 0.3291139240506329,
+            "action_type_match": true,
+            "content_hash_match": false,
+            "lexical_similarity": 0.05357142857142857,
+            "canonical_url_match": false,
+            "embedding_similarity": 0.2972384108409073,
+            "normalized_title_match": false
+          },
+          "threshold_version": "event-hybrid-v2",
+          "decision_origin": "algorithm",
+          "decided_at": "2026-09-03T01:23:36.718637Z"
+        }
+      ],
+      "revisions": [
+        {
+          "version": 2,
+          "reason": "unrelated",
+          "algorithm_version": "temporal-centroid-v1:threshold=0.83",
+          "snapshot": {
+            "title": "Aj s vaším rozpočtom september dokáže zamávať? Toto vášmu účtu uľaví",
+            "novelty": "new",
+            "summary": "Pre rodinnú peňaženku september nemusí byť takou pohromou. Stačí nakupovať v Kauflande, ktorý znížil ceny vyše tisíc výrobkom. A na konečnej účtenke ten rozdiel zbadáte.",
+            "occurred_end": "2026-09-02T22:32:28+00:00",
+            "article_count": 1,
+            "occurred_start": "2026-09-02T22:32:28+00:00",
+            "evidence_strength": "single_source",
+            "source_family_count": 1,
+            "independent_source_family_count": 1
+          },
+          "created_at": "2026-09-03T01:23:36.718637Z"
+        }
+      ],
+      "suggested_decisions": []
+    },
+    {
+      "id": "d621fac9-3d2b-469d-a2c5-d9bba4b81cf1",
+      "version": 2,
+      "title": "Blanár odsúdil ruský incident v Lipsku. Zároveň žiada, aby EÚ neeskalovala",
+      "summary": "Šéf slovenskej diplomacie Juraj Blanár na zasadnutí s rezortnými partnermi z členských štátov EÚ dôrazne odsúdil incident s dronom na letisku v Lipsku zo 4. augusta, za ktorým je podľa vyšetrovania nemeckých orgánov Rusko. Vyjadril zároveň solidaritu Nemecku ako svojmu partnerovi a spojencovi. TASR o tom v stredu informoval komunikačný odbor Ministerstva zahraničných vecí a európskych záležitostí SR.",
+      "actors": [
+        "Blanár",
+        "Lipsku",
+        "Zároveň"
+      ],
+      "organizations": [],
+      "location": "Rusko",
+      "occurred_start": "2026-09-02T21:34:25Z",
+      "occurred_end": "2026-09-02T21:34:25Z",
+      "action_types": [
+        "reported_development"
+      ],
+      "institutional_status": null,
+      "confidence": 1.0,
+      "novelty": "new",
+      "evidence_strength": "single_source",
+      "article_count": 1,
+      "source_family_count": 1,
+      "independent_source_family_count": 1,
+      "algorithm_version": "temporal-centroid-v1:threshold=0.83",
+      "conflicts": [],
+      "created_at": "2026-09-03T01:23:36.718637Z",
+      "updated_at": "2026-09-03T01:23:36.718637Z",
+      "lifecycle_state": "active",
+      "has_suggestions": false,
+      "syndicated_article_count": 0,
+      "timeline": [
+        {
+          "occurred_at": "2026-09-02T21:34:25Z",
+          "action_type": "reported_development",
+          "institutional_status": null,
+          "relation": "unrelated",
+          "candidate_id": "3ac7c154-b993-4a21-8aa8-ffdc373226dc"
+        }
+      ],
+      "evidence": [
+        {
+          "candidate_id": "3ac7c154-b993-4a21-8aa8-ffdc373226dc",
+          "exact_excerpt": "Šéf slovenskej diplomacie Juraj Blanár na zasadnutí s rezortnými partnermi z členských štátov EÚ dôrazne odsúdil incident s dronom na letisku v Lipsku zo 4. augusta, za ktorým je podľa vyšetrovania nemeckých orgánov Rusko. Vyjadril zároveň solidaritu Nemecku ako svojmu partnerovi a spojencovi. TASR o tom v stredu informoval komunikačný odbor Ministerstva zahraničných vecí a európskych záležitostí SR.",
+          "excerpt_start": 0,
+          "excerpt_end": 403,
+          "action_type": "reported_development",
+          "institutional_status": null,
+          "occurred_at": "2026-09-02T21:34:25Z",
+          "article_id": "61668fc9-5927-437c-b9a4-5ca01b6e1eab",
+          "article_title": "Blanár odsúdil ruský incident v Lipsku. Zároveň žiada, aby EÚ neeskalovala",
+          "url": "https://www.pravda.sk/spravy/svet/clanok/2034795-blanar-odsudil-rusky-incident-v-lipsku-zaroven-ziada-aby-eu-neeskalovala",
+          "published_at": "2026-09-02T21:34:25Z",
+          "discovered_at": "2026-09-02T22:20:07.659735Z",
+          "revision_number": 1,
+          "content_hash": "456b267e1bf724ef38a283a01156462702202774df2b0b0bbabd2bdf3648b2ce",
+          "source_id": "pravda_spravy",
+          "source_name": "Pravda Správy",
+          "source_family": "pravda",
+          "relation": "unrelated",
+          "decision_id": "5d633605-ed8b-444d-a0f5-29526cb530a0",
+          "decision_score": 0.653439,
+          "decision_status": "accepted",
+          "decision_reason": "topic or entity overlap without enough event anchors",
+          "decision_features": {
+            "update_signal": true,
+            "entity_overlap": 0.14285714285714285,
+            "location_match": false,
+            "status_changed": false,
+            "time_proximity": 0.9317438271604939,
+            "text_similarity": 0.20976491862567812,
+            "title_similarity": 0.23841059602649006,
+            "action_type_match": false,
+            "content_hash_match": false,
+            "lexical_similarity": 0.06153846153846154,
+            "canonical_url_match": false,
+            "embedding_similarity": 0.6534389257102573,
+            "normalized_title_match": false
+          },
+          "threshold_version": "event-hybrid-v2",
+          "decision_origin": "algorithm",
+          "decided_at": "2026-09-03T01:23:36.718637Z"
+        }
+      ],
+      "revisions": [
+        {
+          "version": 2,
+          "reason": "same_topic",
+          "algorithm_version": "temporal-centroid-v1:threshold=0.83",
+          "snapshot": {
+            "title": "Blanár odsúdil ruský incident v Lipsku. Zároveň žiada, aby EÚ neeskalovala",
+            "novelty": "new",
+            "summary": "Šéf slovenskej diplomacie Juraj Blanár na zasadnutí s rezortnými partnermi z členských štátov EÚ dôrazne odsúdil incident s dronom na letisku v Lipsku zo 4. augusta, za ktorým je podľa vyšetrovania nemeckých orgánov Rusko. Vyjadril zároveň solidaritu Nemecku ako svojmu partnerovi a spojencovi. TASR o tom v stredu informoval komunikačný odbor Ministerstva zahraničných vecí a európskych záležitostí SR.",
+            "occurred_end": "2026-09-02T21:34:25+00:00",
+            "article_count": 1,
+            "occurred_start": "2026-09-02T21:34:25+00:00",
+            "evidence_strength": "single_source",
+            "source_family_count": 1,
+            "independent_source_family_count": 1
+          },
+          "created_at": "2026-09-03T01:23:36.718637Z"
+        }
+      ],
+      "suggested_decisions": []
+    }
+  ],
+  "filters": {
+    "people": [],
+    "organizations": [],
+    "public_institutions": [],
+    "geography": null,
+    "since": null,
+    "until": null,
+    "action_types": [],
+    "institutional_status": null,
+    "min_independent_sources": 0,
+    "novelty": null,
+    "evidence_strength": null,
+    "coverage": null,
+    "min_articles": 0,
+    "has_conflicts": null
+  }
+}

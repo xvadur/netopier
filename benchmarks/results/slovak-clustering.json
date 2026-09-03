@@ -1,0 +1,78 @@
+{
+  "dataset": "slovak-live-title-clusters-2026-09-02",
+  "review_status": "provisional",
+  "item_count": 22,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "selection": "temporal-centroid@0.83",
+  "results": [
+    {
+      "name": "tfidf-dbscan@0.34",
+      "runtime_ms": 0.775,
+      "metrics": {
+        "pairwise_precision": 1.0,
+        "pairwise_recall": 0.5,
+        "pairwise_f1": 0.6667,
+        "true_positive_pairs": 3,
+        "false_merge_pairs": [],
+        "false_split_pairs": [
+          [
+            "drought_dennikn",
+            "drought_pravda"
+          ],
+          [
+            "sanctions_aktuality",
+            "sanctions_pravda"
+          ],
+          [
+            "fire_aktuality",
+            "fire_pravda"
+          ]
+        ],
+        "cluster_count": 19,
+        "singleton_rate": 0.8421,
+        "multi_source_cluster_rate": 0.1579
+      }
+    },
+    {
+      "name": "temporal-centroid@0.83",
+      "runtime_ms": 0.271,
+      "metrics": {
+        "pairwise_precision": 1.0,
+        "pairwise_recall": 0.8333,
+        "pairwise_f1": 0.9091,
+        "true_positive_pairs": 5,
+        "false_merge_pairs": [],
+        "false_split_pairs": [
+          [
+            "drought_dennikn",
+            "drought_pravda"
+          ]
+        ],
+        "cluster_count": 17,
+        "singleton_rate": 0.7059,
+        "multi_source_cluster_rate": 0.2941
+      }
+    },
+    {
+      "name": "temporal-centroid@0.79",
+      "runtime_ms": 0.173,
+      "metrics": {
+        "pairwise_precision": 1.0,
+        "pairwise_recall": 0.8333,
+        "pairwise_f1": 0.9091,
+        "true_positive_pairs": 5,
+        "false_merge_pairs": [],
+        "false_split_pairs": [
+          [
+            "drought_dennikn",
+            "drought_pravda"
+          ]
+        ],
+        "cluster_count": 17,
+        "singleton_rate": 0.7059,
+        "multi_source_cluster_rate": 0.2941
+      }
+    }
+  ],
+  "peak_rss_mb": 64.1
+}

@@ -1,0 +1,37 @@
+schema_version: 1
+collected_from: /Users/xvadur_mac/netopier/sources/sources.yaml
+reviewed_at: 2026-09-03
+sources:
+  - id: dennikn_minuty_all
+    name: Denník N Minúta po minúte
+    site_url: https://dennikn.sk/minuta/
+    feed_url: https://dennikn.sk/minuta/feed/?cat=2386
+    source_family: dennikn
+    language: sk
+    country: SK
+    text_scope: rss
+  - id: dennikn
+    name: Denník N
+    site_url: https://dennikn.sk/
+    feed_url: https://dennikn.sk/feed/
+    source_family: dennikn
+    language: sk
+    country: SK
+    text_scope: rss
+  - id: aktuality
+    name: Aktuality.sk
+    site_url: https://www.aktuality.sk/
+    feed_url: https://www.aktuality.sk/rss/
+    source_family: aktuality
+    language: sk
+    country: SK
+    text_scope: rss
+  - id: pravda_spravy
+    name: Pravda Správy
+    site_url: https://spravy.pravda.sk/
+    feed_url: https://spravy.pravda.sk/rss/xml/
+    resolved_feed_url: https://www.pravda.sk/spravy/rss/xml
+    source_family: pravda
+    language: sk
+    country: SK
+    text_scope: rss

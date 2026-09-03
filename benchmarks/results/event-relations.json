@@ -1,0 +1,237 @@
+{
+  "dataset": "netopier-event-relations-2026-09-03",
+  "review_status": "provisional",
+  "evidence_boundary": "Every pair points to public articles present in the bounded local archive. The exact-copy case intentionally replays one canonical article because ingestion removed duplicate rows. The event-update label is a provisional editorial judgment and requires Adam's ratification.",
+  "pair_count": 5,
+  "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "results": [
+    {
+      "name": "lexical-baseline",
+      "predictions": [
+        "syndicated_copy",
+        "unrelated",
+        "unrelated",
+        "unrelated",
+        "unrelated"
+      ],
+      "runtime_ms": 0.005,
+      "metrics": {
+        "accuracy": 0.4,
+        "automatic_merge_precision": 1.0,
+        "automatic_merge_recall": 0.3333,
+        "automatic_merge_f1": 0.5,
+        "dangerous_false_merges": [],
+        "false_splits": [
+          "eu_sanctions_same_event",
+          "mako_testimony_later_assessment"
+        ],
+        "per_class": {
+          "syndicated_copy": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "same_event": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "event_update": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "same_topic": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "unrelated": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "support": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "embedding-baseline",
+      "predictions": [
+        "syndicated_copy",
+        "same_event",
+        "same_topic",
+        "same_topic",
+        "unrelated"
+      ],
+      "runtime_ms": 0.001,
+      "metrics": {
+        "accuracy": 0.8,
+        "automatic_merge_precision": 1.0,
+        "automatic_merge_recall": 0.6667,
+        "automatic_merge_f1": 0.8,
+        "dangerous_false_merges": [],
+        "false_splits": [
+          "mako_testimony_later_assessment"
+        ],
+        "per_class": {
+          "syndicated_copy": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "same_event": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "event_update": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "same_topic": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667,
+            "support": 1
+          },
+          "unrelated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "hybrid-event-v2",
+      "predictions": [
+        "syndicated_copy",
+        "same_event",
+        "event_update",
+        "same_topic",
+        "unrelated"
+      ],
+      "runtime_ms": 0.001,
+      "metrics": {
+        "accuracy": 1.0,
+        "automatic_merge_precision": 1.0,
+        "automatic_merge_recall": 1.0,
+        "automatic_merge_f1": 1.0,
+        "dangerous_false_merges": [],
+        "false_splits": [],
+        "per_class": {
+          "syndicated_copy": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "same_event": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "event_update": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "same_topic": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          },
+          "unrelated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1
+          }
+        }
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "id": "exact_replay_fire",
+      "relation": "syndicated_copy",
+      "rationale": "The same canonical URL and preserved content revision replayed twice is one coverage item.",
+      "left_url": "https://www.aktuality.sk/clanok/o3iquHa/v-obci-nahac-vypukol-poziar-v-areali-druzstva-na-mieste-zasahuju-desiatky-hasicov",
+      "right_url": "https://www.aktuality.sk/clanok/o3iquHa/v-obci-nahac-vypukol-poziar-v-areali-druzstva-na-mieste-zasahuju-desiatky-hasicov",
+      "anchors": {
+        "entity_overlap": 1.0,
+        "location_match": true,
+        "time_proximity": 1.0,
+        "action_type_match": true
+      }
+    },
+    {
+      "id": "eu_sanctions_same_event",
+      "relation": "same_event",
+      "rationale": "Both reports cover the same failed Coreper agreement and Slovakia's objection.",
+      "left_url": "https://www.aktuality.sk/clanok/6G87loR/eu-sa-nedohodla-na-predlzeni-sankcii-voci-rusku-proti-je-udajne-slovensko",
+      "right_url": "https://www.pravda.sk/spravy/svet/clanok/2034747-brusel-sa-nedohodol-na-sankciach-proti-rusku-problemom-ma-byt-uz-len-slovensko",
+      "anchors": {
+        "entity_overlap": 0.9,
+        "location_match": true,
+        "time_proximity": 0.95,
+        "action_type_match": true
+      }
+    },
+    {
+      "id": "mako_testimony_later_assessment",
+      "relation": "event_update",
+      "rationale": "The later minute adds the defense posture after Mako's testimony reported in the earlier article.",
+      "left_url": "https://dennikn.sk/5537241/mako-si-sadol-oproti-senatu-a-spustil-svedectvo-ktore-nechcel-bodor-s-gasparom-pocut",
+      "right_url": "https://dennikn.sk/minuta/5538434",
+      "anchors": {
+        "entity_overlap": 0.9,
+        "location_match": false,
+        "time_proximity": 0.9,
+        "action_type_match": true,
+        "update_signal": true,
+        "status_changed": true
+      }
+    },
+    {
+      "id": "drought_policy_same_topic",
+      "relation": "same_topic",
+      "rationale": "Both concern drought-resistant agriculture policy, but one is aid and the other explains gene-editing legislation.",
+      "left_url": "https://e.dennikn.sk/5537273/vlada-da-farmarom-na-sucho-desiatky-milionov-no-zaroven-sa-postavila-proti-slachteniu-odolnejsich-plodin",
+      "right_url": "https://dennikn.sk/5537215/bezlepkova-psenica-ryza-odolna-proti-suchu-vedec-vysvetluje-preco-sa-na-rozdiel-od-vlady-neobava-genetickych-zasahov-do-rastlin",
+      "anchors": {
+        "entity_overlap": 0.45,
+        "location_match": true,
+        "time_proximity": 0.95,
+        "action_type_match": false
+      }
+    },
+    {
+      "id": "trains_and_dragonflies_unrelated",
+      "relation": "unrelated",
+      "rationale": "A railway equipment failure and dragonfly behavior share no event or meaningful topic.",
+      "left_url": "https://www.aktuality.sk/clanok/8YdxPQO/technicke-problemy-odstavili-moderne-vlaky-na-horehroni-supluju-ich-retro-motoraky",
+      "right_url": "https://dennikn.sk/5532498/samice-vazok-predstieraju-smrt-aby-sa-vyhli-sexu-biologicka-bilkova-to-pozoruje-priamo-v-terene",
+      "anchors": {
+        "entity_overlap": 0.0,
+        "location_match": false,
+        "time_proximity": 0.9,
+        "action_type_match": false
+      }
+    }
+  ],
+  "peak_rss_mb": 63.1
+}

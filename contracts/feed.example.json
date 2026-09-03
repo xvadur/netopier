@@ -1,0 +1,99 @@
+{
+  "snapshot_id": "cd57d75e-6a55-4945-a44b-d11b53e06a2f",
+  "story_count": 51,
+  "items": [
+    {
+      "id": "1eb64177-3674-48f0-9c68-9f9d4e9fbc00",
+      "title": "Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu",
+      "first_published_at": "2026-09-02T19:40:34Z",
+      "last_published_at": "2026-09-02T20:01:21Z",
+      "article_count": 2,
+      "source_family_count": 2,
+      "score": 23.169925,
+      "score_factors": {
+        "article_count": 2,
+        "coverage_score": 3.169925,
+        "ranking_version": "source-family-v1",
+        "source_family_count": 2,
+        "source_family_score": 20.0
+      },
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "ranking_version": "source-family-v1",
+      "articles": [
+        {
+          "id": "cbe1ef5b-9142-4fb2-95cb-6fd60ed66c4a",
+          "title": "Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu",
+          "url": "https://www.pravda.sk/spravy/regiony/clanok/2034767-velky-poziar-pri-trnave-hasici-hovoria-o-narocnom-zasahu",
+          "author": "TASR",
+          "published_at": "2026-09-02T20:01:21Z",
+          "discovered_at": "2026-09-02T22:20:07.658682Z",
+          "text_scope": "rss",
+          "source_id": "pravda_spravy",
+          "source_name": "Pravda Správy",
+          "source_family": "pravda",
+          "similarity": 0.8636104865757164
+        },
+        {
+          "id": "57feca3d-f180-40c4-a410-d7234003cc2a",
+          "title": "V obci Naháč vypukol požiar v areáli družstva, na mieste zasahujú desiatky hasičov",
+          "url": "https://www.aktuality.sk/clanok/o3iquHa/v-obci-nahac-vypukol-poziar-v-areali-druzstva-na-mieste-zasahuju-desiatky-hasicov",
+          "author": null,
+          "published_at": "2026-09-02T19:40:34Z",
+          "discovered_at": "2026-09-02T22:20:06.489343Z",
+          "text_scope": "rss",
+          "source_id": "aktuality",
+          "source_name": "Aktuality.sk",
+          "source_family": "aktuality",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "id": "383e41c9-6b34-49a9-be3f-0375e6958102",
+      "title": "Smrť na sídlisku v Bratislave. Po páde z okna zomrel 43-ročný muž",
+      "first_published_at": "2026-09-02T18:31:24Z",
+      "last_published_at": "2026-09-02T19:16:11Z",
+      "article_count": 2,
+      "source_family_count": 2,
+      "score": 23.169925,
+      "score_factors": {
+        "article_count": 2,
+        "coverage_score": 3.169925,
+        "ranking_version": "source-family-v1",
+        "source_family_count": 2,
+        "source_family_score": 20.0
+      },
+      "algorithm_version": "temporal-centroid-v1:threshold=0.79",
+      "ranking_version": "source-family-v1",
+      "articles": [
+        {
+          "id": "e620b04b-0bf2-4006-b0f9-b6543d15a642",
+          "title": "Smrť na sídlisku v Bratislave. Po páde z okna zomrel 43-ročný muž",
+          "url": "https://www.pravda.sk/spravy/regiony/clanok/2034753-smrt-na-sidlisku-v-bratislave-po-pade-z-okna-zomrel-43-rocny-muz",
+          "author": "TASR",
+          "published_at": "2026-09-02T19:16:11Z",
+          "discovered_at": "2026-09-02T22:20:07.658240Z",
+          "text_scope": "rss",
+          "source_id": "pravda_spravy",
+          "source_name": "Pravda Správy",
+          "source_family": "pravda",
+          "similarity": 0.8857105480377282
+        },
+        {
+          "id": "a9a074ce-ecff-456c-a115-aaba07100755",
+          "title": "V Bratislave zomrel muža po páde z okna. Ako sa to stalo, vyšetruje polícia",
+          "url": "https://www.aktuality.sk/clanok/xBtE4jP/v-bratislave-zomrel-muza-po-pade-z-okna-ako-sa-to-stalo-vysetruje-policia",
+          "author": null,
+          "published_at": "2026-09-02T18:31:24Z",
+          "discovered_at": "2026-09-02T22:20:06.487645Z",
+          "text_scope": "rss",
+          "source_id": "aktuality",
+          "source_name": "Aktuality.sk",
+          "source_family": "aktuality",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ],
+  "next_cursor": "eyJzbmFwc2hvdF9pZCI6ImNkNTdkNzVlLTZhNTUtNDk0NS1hNDRiLWQxMWI1M2UwNmEyZiIsInBvc2l0aW9uIjoyfQ"
+}

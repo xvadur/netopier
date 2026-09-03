@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-09-03T00:25:00+02:00",
+  "manifest": "sources/slovak-core.yaml",
+  "import": {
+    "created": 0,
+    "updated": 4,
+    "total": 4
+  },
+  "miniflux": {
+    "created": [],
+    "retained": [
+      {"source_id": "dennikn_minuty_all", "feed_id": 1},
+      {"source_id": "dennikn", "feed_id": 2},
+      {"source_id": "aktuality", "feed_id": 3},
+      {"source_id": "pravda_spravy", "feed_id": 4}
+    ],
+    "failed": [],
+    "bound_sources": 4
+  }
+}

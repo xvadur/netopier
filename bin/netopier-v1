@@ -1,0 +1,60 @@
+#!/bin/sh
+set -eu
+
+project_dir=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+
+command_name="${1:-help}"
+case "$command_name" in
+  up)
+    docker compose up -d postgres miniflux
+    docker compose run --rm api alembic upgrade head
+    docker compose up -d api
+    ;;
+  bootstrap)
+    docker compose run --rm api netopier-v1 sources import sources/slovak-core.yaml
+    docker compose run --rm api netopier-v1 sources bootstrap-miniflux sources/slovak-core.yaml
+    ;;
+  once)
+    docker compose run --rm api netopier-v1 reconcile
+    ;;
+  worker-on)
+    docker compose --profile continuous up -d worker
+    ;;
+  worker-off)
+    docker compose --profile continuous stop worker
+    ;;
+  test)
+    docker build --target test -t netopier-v1-test .
+    docker run --rm netopier-v1-test
+    ;;
+  smoke)
+    python3 scripts/smoke.py
+    ;;
+  snapshot-smoke)
+    docker compose run --rm \
+      -v "$project_dir/scripts:/app/scripts:ro" \
+      api python scripts/snapshot_mutation_smoke.py
+    ;;
+  contracts)
+    docker compose run --rm \
+      -e NETOPIER_API_BASE_URL=http://api:8000 \
+      -v "$project_dir/scripts:/app/scripts:ro" \
+      -v "$project_dir/contracts:/app/contracts" \
+      api python scripts/export_contracts.py
+    ;;
+  secret-scan)
+    python3 scripts/check_secrets.py
+    ;;
+  model-manifest)
+    docker compose run --rm \
+      -v "$project_dir/scripts:/app/scripts:ro" \
+      -v "$project_dir/artifacts:/app/artifacts" \
+      api python scripts/model_manifest.py
+    ;;
+  down)
+    docker compose down
+    ;;
+  help|*)
+    echo "usage: bin/netopier-v1 {up|bootstrap|once|worker-on|worker-off|test|smoke|snapshot-smoke|contracts|secret-scan|model-manifest|down}"
+    ;;
+esac

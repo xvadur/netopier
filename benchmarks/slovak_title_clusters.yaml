@@ -1,0 +1,145 @@
+schema_version: 1
+name: slovak-live-title-clusters-2026-09-02
+review_status: provisional
+scope: >-
+  Public RSS titles from the first bounded Netopier v1 collection window. Labels
+  test same-event pairs, topic-adjacent negatives, Slovak inflection and multiple
+  feeds from one publisher family. Full RSS bodies remain in the local database.
+limitations:
+  - Labels were reviewed by Codex and still require Adam's editorial ratification.
+  - The bounded window did not contain a verified article update over time.
+  - This is a title-focused review packet; embedding vectors come from the live
+    title-plus-RSS-text pipeline stored locally.
+items:
+  - id: fire_aktuality
+    expected_story: fire_nahac
+    source_family: aktuality
+    challenge: same-event
+    title: V obci Naháč vypukol požiar v areáli družstva, na mieste zasahujú desiatky hasičov
+    url: https://www.aktuality.sk/clanok/o3iquHa/v-obci-nahac-vypukol-poziar-v-areali-druzstva-na-mieste-zasahuju-desiatky-hasicov
+  - id: fire_pravda
+    expected_story: fire_nahac
+    source_family: pravda
+    challenge: same-event
+    title: Veľký požiar pri Trnave. Hasiči hovoria o náročnom zásahu
+    url: https://www.pravda.sk/spravy/regiony/clanok/2034767-velky-poziar-pri-trnave-hasici-hovoria-o-narocnom-zasahu
+  - id: fall_aktuality
+    expected_story: fall_bratislava
+    source_family: aktuality
+    challenge: same-event
+    title: V Bratislave zomrel muža po páde z okna. Ako sa to stalo, vyšetruje polícia
+    url: https://www.aktuality.sk/clanok/xBtE4jP/v-bratislave-zomrel-muza-po-pade-z-okna-ako-sa-to-stalo-vysetruje-policia
+  - id: fall_pravda
+    expected_story: fall_bratislava
+    source_family: pravda
+    challenge: same-event
+    title: Smrť na sídlisku v Bratislave. Po páde z okna zomrel 43-ročný muž
+    url: https://www.pravda.sk/spravy/regiony/clanok/2034753-smrt-na-sidlisku-v-bratislave-po-pade-z-okna-zomrel-43-rocny-muz
+  - id: sanctions_aktuality
+    expected_story: eu_sanctions
+    source_family: aktuality
+    challenge: same-event
+    title: EÚ sa nedohodla na predĺžení sankcií voči Rusku, proti je údajne Slovensko
+    url: https://www.aktuality.sk/clanok/6G87loR/eu-sa-nedohodla-na-predlzeni-sankcii-voci-rusku-proti-je-udajne-slovensko
+  - id: sanctions_pravda
+    expected_story: eu_sanctions
+    source_family: pravda
+    challenge: same-event
+    title: Brusel sa nedohodol na sankciách proti Rusku. Problémom má byť už len Slovensko
+    url: https://www.pravda.sk/spravy/svet/clanok/2034747-brusel-sa-nedohodol-na-sankciach-proti-rusku-problemom-ma-byt-uz-len-slovensko
+  - id: malta_aktuality
+    expected_story: malta_verdict
+    source_family: aktuality
+    challenge: same-event
+    title: Porota na Malte oslobodila muža obžalovaného v prípade vraždy novinárky Daphne Cauranovej Galiziovej
+    url: https://www.aktuality.sk/clanok/R8urIkY/porota-na-malte-oslobodila-muza-obzalovaneho-v-pripade-vrazdy-novinarky-daphne-cauranovej-galiziovej
+  - id: malta_pravda
+    expected_story: malta_verdict
+    source_family: pravda
+    challenge: same-event
+    title: Zvrat v prípade vraždy novinárky na Malte, podnikateľa obžalovaného z objednávky oslobodili
+    url: https://www.pravda.sk/spravy/svet/clanok/2034735-zvrat-v-pripade-vrazdy-novinarky-na-malte-podnikatela-obzalovaneho-z-objednavky-oslobodili
+  - id: hormuz_aktuality
+    expected_story: trump_hormuz
+    source_family: aktuality
+    challenge: same-event
+    title: Trump chce Hormuzský prieliv premenovať po sebe, vraj ho ovládajú USA
+    url: https://www.aktuality.sk/clanok/Y8bOyAe/trump-chce-hormuzsky-prieliv-premenovat-po-sebe-vraj-ho-ovladaju-usa
+  - id: hormuz_pravda
+    expected_story: trump_hormuz
+    source_family: pravda
+    challenge: same-event
+    title: Máme ho takmer pod kontrolou. Trump chce Hormuzský prieliv pomenovať po sebe
+    url: https://www.pravda.sk/spravy/svet/clanok/2034695-mame-ho-takmer-pod-kontrolou-trump-chce-hormuzsky-prieliv-pomenovat-po-sebe
+  - id: drought_dennikn
+    expected_story: drought_aid
+    source_family: dennikn
+    challenge: same-event-hard
+    title: Vláda dá farmárom na sucho desiatky miliónov, no zároveň sa postavila proti šľachteniu odolnejších plodín
+    url: https://e.dennikn.sk/5537273/vlada-da-farmarom-na-sucho-desiatky-milionov-no-zaroven-sa-postavila-proti-slachteniu-odolnejsich-plodin
+  - id: drought_pravda
+    expected_story: drought_aid
+    source_family: pravda
+    challenge: same-event-hard
+    title: Krajina zhnedla, slovenské polia sa zmenili na prach. Vláda zachraňuje farmárov miliónmi a sľubuje obrovskú priehradu
+    url: https://www.pravda.sk/spravy/ekonomika/clanok/2034589-krajina-zhnedla-slovenske-polia-sa-zmenili-na-prach-vlada-zachranuje-farmarov-milionmi-a-slubuje-obrovsku-priehradu
+  - id: ukraine_assets
+    expected_story: singleton_ukraine_assets
+    source_family: pravda
+    challenge: related-but-different-russia
+    title: Obrovský balík pre Ukrajinu naráža na odpor. Belgicko odmieta siahnuť na ruský majetok
+    url: https://www.pravda.sk/spravy/svet/clanok/2034671-obrovsky-balik-pre-ukrajinu-naraza-na-odpor-belgicko-odmieta-siahnut-na-rusky-majetok
+  - id: russia_airspace
+    expected_story: singleton_russia_airspace
+    source_family: pravda
+    challenge: related-but-different-russia
+    title: Ukrajina pritvrdzuje. Žiada radikálny krok pre civilné letectvo. Aerolínie už otáčajú lietadlá
+    url: https://www.pravda.sk/spravy/svet/clanok/2034665-vyhybajte-sa-ruskemu-vzdusnemu-priestoru-ukrajina-vyslala-vazne-varovanie-aerolinie-uz-otacaju-lietadla
+  - id: trump_daily_selection
+    expected_story: singleton_trump_selection
+    source_family: aktuality
+    challenge: related-but-different-trump
+    title: Spor o termín veľkých podujatí, ospravedlnenie politika Jánovi Čurillovi aj problémy Donalda Trumpa
+    url: https://www.aktuality.sk/clanok/8bwx8Qh/spor-o-termin-velkych-podujati-ospravedlnenie-politika-janovi-curillovi-aj-problemy-donalda-trumpa-denny-vyber
+  - id: fpu
+    expected_story: singleton_fpu
+    source_family: aktuality
+    challenge: unrelated
+    title: Ministerka Šimkovičová stiahla vlastných ľudí z Rady FPU
+    url: https://www.aktuality.sk/clanok/GRa32iJ/ministerka-simkovicova-stiahla-vlastnych-ludi-z-rady-fpu
+  - id: trains
+    expected_story: singleton_trains
+    source_family: aktuality
+    challenge: unrelated
+    title: Technické problémy odstavili moderné vlaky na Horehroní. Suplujú ich retro motoráky
+    url: https://www.aktuality.sk/clanok/8YdxPQO/technicke-problemy-odstavili-moderne-vlaky-na-horehroni-supluju-ich-retro-motoraky
+  - id: dragonflies
+    expected_story: singleton_dragonflies
+    source_family: dennikn
+    challenge: unrelated
+    title: Samice vážok predstierajú smrť, aby sa vyhli sexu. Biologička Bílková to pozoruje priamo v teréne
+    url: https://dennikn.sk/5532498/samice-vazok-predstieraju-smrt-aby-sa-vyhli-sexu-biologicka-bilkova-to-pozoruje-priamo-v-terene
+  - id: recipes
+    expected_story: singleton_recipes
+    source_family: dennikn
+    challenge: unrelated
+    title: Varíme s New York Times, päť rýchlych receptov na koniec leta
+    url: https://dennikn.sk/5537310/varime-s-new-york-times-pat-rychlych-receptov-na-koniec-leta
+  - id: nepal_house
+    expected_story: singleton_nepal_house
+    source_family: pravda
+    challenge: unrelated
+    title: Zázračný dom v Nepále prežil skazu, ktorá zmietla celé okolie
+    url: https://www.pravda.sk/spravy/svet/clanok/2034711-zazracny-dom-fascinuje-nepal-povoden-zrovnala-okolie-so-zemou-jedna-stavba-odmietla-padnut
+  - id: stock_market
+    expected_story: singleton_stock_market
+    source_family: dennikn
+    challenge: unrelated
+    title: Americké akciové indexy sa po troch dňoch poklesov posilnili
+    url: https://e.dennikn.sk/minuta/5538417
+  - id: football
+    expected_story: singleton_football
+    source_family: dennikn
+    challenge: unrelated-same-family
+    title: ŠK Slovan Bratislava posilní obranca Sahmkou Camara
+    url: https://dennikn.sk/minuta/5538397
