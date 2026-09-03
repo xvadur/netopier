@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from uuid import UUID
 
-from netopier_v1.database import DbConnection
+from netopier.database import DbConnection
 
 SNAPSHOT_RETENTION_HOURS = 24
 

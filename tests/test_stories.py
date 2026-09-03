@@ -1,5 +1,5 @@
-from netopier_v1.config import Settings
-from netopier_v1.stories import RANKING_VERSION, StoryEngine, explainable_score
+from netopier.config import Settings
+from netopier.stories import RANKING_VERSION, StoryEngine, explainable_score
 
 
 def test_score_rewards_independent_source_families() -> None:

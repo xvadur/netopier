@@ -11,11 +11,11 @@ case "$command_name" in
     docker compose up -d api
     ;;
   bootstrap)
-    docker compose run --rm api netopier-v1 sources import sources/slovak-core.yaml
-    docker compose run --rm api netopier-v1 sources bootstrap-miniflux sources/slovak-core.yaml
+    docker compose run --rm api netopier sources import sources/slovak-core.yaml
+    docker compose run --rm api netopier sources bootstrap-miniflux sources/slovak-core.yaml
     ;;
   once)
-    docker compose run --rm api netopier-v1 reconcile
+    docker compose run --rm api netopier reconcile
     ;;
   worker-on)
     docker compose --profile continuous up -d worker
@@ -24,8 +24,8 @@ case "$command_name" in
     docker compose --profile continuous stop worker
     ;;
   test)
-    docker build --target test -t netopier-v1-test .
-    docker run --rm netopier-v1-test
+    docker build --target test -t netopier-test .
+    docker run --rm netopier-test
     ;;
   smoke)
     python3 scripts/smoke.py
@@ -55,6 +55,6 @@ case "$command_name" in
     docker compose down
     ;;
   help|*)
-    echo "usage: bin/netopier-v1 {up|bootstrap|once|worker-on|worker-off|test|smoke|snapshot-smoke|contracts|secret-scan|model-manifest|down}"
+    echo "usage: bin/netopier {up|bootstrap|once|worker-on|worker-off|test|smoke|snapshot-smoke|contracts|secret-scan|model-manifest|down}"
     ;;
 esac

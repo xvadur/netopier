@@ -22,5 +22,5 @@ Runtime dependencies:
 Transitive dependency notices remain governed by their distributions and must be
 captured in a generated SBOM before release.
 
-These notices describe third-party terms. They do not license Netopier v1 source
+These notices describe third-party terms. They do not license Netopier v2 source
 code itself.

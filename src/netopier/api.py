@@ -4,12 +4,12 @@ from uuid import UUID
 
 from fastapi import FastAPI, HTTPException, Query
 
-from netopier_v1 import __version__
-from netopier_v1.database import connection
-from netopier_v1.feed import EventQuery, FeedProjector
+from netopier import __version__
+from netopier.database import connection
+from netopier.feed import EventQuery, FeedProjector
 
 app = FastAPI(
-    title="Netopier v1",
+    title="Netopier v2",
     description="Local-first Slovak public-source news intelligence backend",
     version=__version__,
 )

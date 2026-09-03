@@ -1,10 +1,10 @@
 import argparse
 import json
 
-from netopier_v1.config import get_settings
-from netopier_v1.database import connection
-from netopier_v1.pipeline import process_pending, reconcile_once, run_forever
-from netopier_v1.sources import SourceRegistry, bootstrap_miniflux, load_source_manifest
+from netopier.config import get_settings
+from netopier.database import connection
+from netopier.pipeline import process_pending, reconcile_once, run_forever
+from netopier.sources import SourceRegistry, bootstrap_miniflux, load_source_manifest
 
 
 def _print(payload: object) -> None:
@@ -12,7 +12,7 @@ def _print(payload: object) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="netopier-v1")
+    parser = argparse.ArgumentParser(prog="netopier")
     sub = parser.add_subparsers(dest="command", required=True)
 
     sources = sub.add_parser("sources")

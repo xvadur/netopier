@@ -3,7 +3,7 @@ import json
 from datetime import UTC, datetime
 from pathlib import Path
 
-from netopier_v1.config import get_settings
+from netopier.config import get_settings
 
 
 def sha256(path: Path) -> str:

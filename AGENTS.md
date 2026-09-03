@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Netopier is a clean, local-first Slovak public-source news intelligence backend.
+Netopier v2 is a clean, local-first Slovak public-source news intelligence backend.
 The previous v0 implementation is retired and must not be reintroduced.
 
 ## Hard boundaries

@@ -1,13 +1,13 @@
 import numpy as np
 
-from netopier_v1.benchmark import (
+from netopier.benchmark import (
     dbscan_min_samples_one,
     evaluate,
     evaluate_relations,
     temporal_centroid,
     tfidf_vectors,
 )
-from netopier_v1.events import EventRelation
+from netopier.events import EventRelation
 
 
 def test_lexical_baseline_groups_near_duplicate_titles() -> None:

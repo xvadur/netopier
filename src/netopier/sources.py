@@ -5,9 +5,9 @@ import httpx
 import yaml
 from psycopg.types.json import Jsonb
 
-from netopier_v1.config import Settings
-from netopier_v1.database import DbConnection
-from netopier_v1.domain import SourceSpec
+from netopier.config import Settings
+from netopier.database import DbConnection
+from netopier.domain import SourceSpec
 
 
 def load_source_manifest(path: str | Path) -> list[SourceSpec]:

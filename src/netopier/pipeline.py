@@ -4,12 +4,12 @@ from typing import Any
 import structlog
 from psycopg.types.json import Jsonb
 
-from netopier_v1.archive import ArticleArchive
-from netopier_v1.config import Settings
-from netopier_v1.database import connection
-from netopier_v1.embeddings import EmbeddingIndex
-from netopier_v1.miniflux import MinifluxGateway
-from netopier_v1.stories import StoryEngine
+from netopier.archive import ArticleArchive
+from netopier.config import Settings
+from netopier.database import connection
+from netopier.embeddings import EmbeddingIndex
+from netopier.miniflux import MinifluxGateway
+from netopier.stories import StoryEngine
 
 log = structlog.get_logger()
 RECONCILIATION_LOCK_ID = 741852964

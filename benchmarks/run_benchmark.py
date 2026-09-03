@@ -7,14 +7,14 @@ from pathlib import Path
 import numpy as np
 import yaml
 
-from netopier_v1.benchmark import (
+from netopier.benchmark import (
     dbscan_min_samples_one,
     evaluate,
     temporal_centroid,
     tfidf_vectors,
 )
-from netopier_v1.config import get_settings
-from netopier_v1.database import connection
+from netopier.config import get_settings
+from netopier.database import connection
 
 
 def parser() -> argparse.ArgumentParser:

@@ -3,9 +3,9 @@ from uuid import UUID
 
 from fastembed import TextEmbedding
 
-from netopier_v1.config import Settings
-from netopier_v1.database import DbConnection
-from netopier_v1.domain import EmbeddingReceipt
+from netopier.config import Settings
+from netopier.database import DbConnection
+from netopier.domain import EmbeddingReceipt
 
 
 def _vector_literal(values: Iterable[float]) -> str:

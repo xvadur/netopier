@@ -1,4 +1,4 @@
-from netopier_v1.text import canonicalize_url, content_hash, html_to_text, normalize_title
+from netopier.text import canonicalize_url, content_hash, html_to_text, normalize_title
 
 
 def test_canonicalize_url_removes_fragment_and_tracking() -> None:

@@ -30,8 +30,8 @@ RUN pip install --no-cache-dir --no-deps "."
 FROM base AS runtime
 USER netopier
 
-CMD ["uvicorn", "netopier_v1.api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "netopier.api:app", "--host", "0.0.0.0", "--port", "8000"]
 
 FROM base AS test
 RUN python -c 'import subprocess,sys,tomllib; p=tomllib.load(open("pyproject.toml","rb")); subprocess.check_call([sys.executable,"-m","pip","install","--no-cache-dir",*p["project"]["optional-dependencies"]["dev"]])'
-CMD ["sh", "-c", "pytest -q && ruff check src tests benchmarks scripts && mypy src/netopier_v1"]
+CMD ["sh", "-c", "pytest -q && ruff check src tests benchmarks scripts && mypy src/netopier"]

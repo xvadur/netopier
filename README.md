@@ -1,7 +1,8 @@
-# Netopier
+# Netopier v2
 
-Clean, local-first Slovak public-source news-intelligence backend. This codebase
-replaced the retired v0 implementation and is the canonical Netopier repository.
+Clean, local-first Slovak public-source news-intelligence backend. Netopier v2
+replaced the retired v0 implementation and lives in the canonical `netopier`
+folder and GitHub repository.
 
 The public newsroom direction, editorial relevance boundary, and daily output
 target are defined in [`PRODUCT_HYPOTHESIS.md`](PRODUCT_HYPOTHESIS.md).
@@ -23,14 +24,14 @@ cp .env.example .env
 # Replace every change-me value in .env.
 docker compose up -d postgres miniflux
 docker compose run --rm api alembic upgrade head
-docker compose run --rm api netopier-v1 sources import sources/slovak-core.yaml
-docker compose run --rm api netopier-v1 sources bootstrap-miniflux sources/slovak-core.yaml
+docker compose run --rm api netopier sources import sources/slovak-core.yaml
+docker compose run --rm api netopier sources bootstrap-miniflux sources/slovak-core.yaml
 docker compose up -d api
 ```
 
 This safe default leaves the embedding worker off. Run one bounded batch with
-`bin/netopier-v1 once`. Enable continuous reconciliation explicitly with
-`bin/netopier-v1 worker-on`; stop it with `bin/netopier-v1 worker-off`. Continuous
+`bin/netopier once`. Enable continuous reconciliation explicitly with
+`bin/netopier worker-on`; stop it with `bin/netopier worker-off`. Continuous
 mode processes at most 20 entries every five minutes and the worker container is
 limited to one CPU and 1 GiB RAM.
 
@@ -44,14 +45,14 @@ The local interfaces are:
 ## Verify
 
 ```bash
-docker compose run --rm api netopier-v1 reconcile
-docker compose run --rm api netopier-v1 process
-bin/netopier-v1 test
-bin/netopier-v1 smoke
-bin/netopier-v1 snapshot-smoke
-bin/netopier-v1 contracts
-bin/netopier-v1 secret-scan
-bin/netopier-v1 model-manifest
+docker compose run --rm api netopier reconcile
+docker compose run --rm api netopier process
+bin/netopier test
+bin/netopier smoke
+bin/netopier snapshot-smoke
+bin/netopier contracts
+bin/netopier secret-scan
+bin/netopier model-manifest
 docker compose run --rm api python benchmarks/run_benchmark.py
 docker compose run --rm api python benchmarks/run_event_benchmark.py
 ```

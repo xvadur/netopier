@@ -3,8 +3,8 @@ requires = ["hatchling==1.27.0"]
 build-backend = "hatchling.build"
 
 [project]
-name = "netopier-v1"
-version = "0.1.0"
+name = "netopier"
+version = "2.0.0"
 description = "Local-first Slovak public-source news intelligence backend"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
@@ -31,10 +31,10 @@ dev = [
 ]
 
 [project.scripts]
-netopier-v1 = "netopier_v1.cli:main"
+netopier = "netopier.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/netopier_v1"]
+packages = ["src/netopier"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]

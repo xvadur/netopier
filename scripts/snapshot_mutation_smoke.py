@@ -1,7 +1,7 @@
 import json
 
-from netopier_v1.database import connection
-from netopier_v1.feed import FeedProjector
+from netopier.database import connection
+from netopier.feed import FeedProjector
 
 
 def main() -> None:

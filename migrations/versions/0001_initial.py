@@ -1,4 +1,4 @@
-"""Create the clean Netopier v1 schema.
+"""Create the clean Netopier v2 schema.
 
 Revision ID: 0001_initial
 Revises:

@@ -4,8 +4,8 @@ from collections.abc import Sequence
 
 import numpy as np
 
-from netopier_v1.events import EventRelation
-from netopier_v1.text import normalize_title
+from netopier.events import EventRelation
+from netopier.text import normalize_title
 
 
 def tfidf_vectors(texts: Sequence[str]) -> np.ndarray:

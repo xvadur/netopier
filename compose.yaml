@@ -1,4 +1,4 @@
-name: netopier-v1
+name: netopier
 
 services:
   postgres:
@@ -46,7 +46,9 @@ services:
     restart: unless-stopped
 
   api:
-    build: .
+    build:
+      context: .
+      target: runtime
     depends_on:
       postgres:
         condition: service_healthy
@@ -70,9 +72,11 @@ services:
     restart: unless-stopped
 
   worker:
-    build: .
+    build:
+      context: .
+      target: runtime
     profiles: ["continuous"]
-    command: ["netopier-v1", "worker", "--forever"]
+    command: ["netopier", "worker", "--forever"]
     depends_on:
       postgres:
         condition: service_healthy

@@ -2,7 +2,7 @@
 
 ## ADR-001: v0 is retired
 
-The clean v1 backend replaced v0 at the canonical `/Users/xvadur_mac/netopier`
+The clean v2 backend replaced v0 at the canonical `/Users/xvadur_mac/netopier`
 path. Retired v0 code, runtime state, generated bundles, schedulers, and clusters
 are not dependencies and must not be reintroduced. Only reviewed public source
 metadata and explicitly approved evidence migrations may cross that historical
@@ -46,5 +46,5 @@ mode. Continuous mode uses a 20-entry batch, a five-minute interval, one CPU and
 ## ADR-007: OSS-supported is not an automatic source license
 
 The runtime is assembled from maintained open-source components and keeps their
-notices. Netopier v1 itself has no public license grant. Publishing its source or
+notices. Netopier v2 itself has no public license grant. Publishing its source or
 choosing an OSS license requires Adam's separate decision.

@@ -7,10 +7,10 @@ from pathlib import Path
 import numpy as np
 import yaml
 
-from netopier_v1.benchmark import evaluate_relations, tfidf_vectors
-from netopier_v1.config import get_settings
-from netopier_v1.database import connection
-from netopier_v1.events import EventFeatures, EventRelation, RelationshipDecider
+from netopier.benchmark import evaluate_relations, tfidf_vectors
+from netopier.config import get_settings
+from netopier.database import connection
+from netopier.events import EventFeatures, EventRelation, RelationshipDecider
 
 
 def parser() -> argparse.ArgumentParser:

@@ -1,6 +1,6 @@
 from datetime import UTC, datetime
 
-from netopier_v1.events import (
+from netopier.events import (
     ArticleRevision,
     DecisionStatus,
     EventCandidateExtractor,

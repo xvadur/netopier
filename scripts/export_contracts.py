@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from urllib.request import urlopen
 
-from netopier_v1.api import app
+from netopier.api import app
 
 BASE_URL = os.getenv("NETOPIER_API_BASE_URL", "http://127.0.0.1:8090")
 OUTPUT = Path("contracts")

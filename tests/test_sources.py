@@ -1,8 +1,8 @@
 import httpx
 
-from netopier_v1.config import Settings
-from netopier_v1.domain import SourceSpec
-from netopier_v1.sources import bootstrap_miniflux
+from netopier.config import Settings
+from netopier.domain import SourceSpec
+from netopier.sources import bootstrap_miniflux
 
 
 def test_bootstrap_is_idempotent() -> None:

@@ -2,9 +2,9 @@ from uuid import UUID
 
 from psycopg.types.json import Jsonb
 
-from netopier_v1.database import DbConnection
-from netopier_v1.domain import EntryBatch, IngestReceipt
-from netopier_v1.text import canonicalize_url, content_hash, html_to_text, normalize_title
+from netopier.database import DbConnection
+from netopier.domain import EntryBatch, IngestReceipt
+from netopier.text import canonicalize_url, content_hash, html_to_text, normalize_title
 
 
 class ArticleArchive:

@@ -1,6 +1,6 @@
 from uuid import UUID
 
-from netopier_v1.feed import _decode_cursor, _encode_cursor
+from netopier.feed import _decode_cursor, _encode_cursor
 
 
 def test_cursor_round_trip() -> None:

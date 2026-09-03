@@ -2,7 +2,7 @@ schema_version: 1
 name: slovak-live-title-clusters-2026-09-02
 review_status: provisional
 scope: >-
-  Public RSS titles from the first bounded Netopier v1 collection window. Labels
+  Public RSS titles from the first bounded Netopier v2 collection window. Labels
   test same-event pairs, topic-adjacent negatives, Slovak inflection and multiple
   feeds from one publisher family. Full RSS bodies remain in the local database.
 limitations:

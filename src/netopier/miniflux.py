@@ -2,8 +2,8 @@ from datetime import datetime
 
 import httpx
 
-from netopier_v1.config import Settings
-from netopier_v1.domain import EntryBatch, MinifluxEntry
+from netopier.config import Settings
+from netopier.domain import EntryBatch, MinifluxEntry
 
 
 def _parse_datetime(value: str | None) -> datetime | None:

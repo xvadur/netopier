@@ -1,7 +1,7 @@
 import httpx
 
-from netopier_v1.config import Settings
-from netopier_v1.miniflux import MinifluxGateway
+from netopier.config import Settings
+from netopier.miniflux import MinifluxGateway
 
 
 def test_reconcile_maps_documented_miniflux_payload() -> None:

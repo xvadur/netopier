@@ -1,15 +1,15 @@
-# Netopier v1 night-build report
+# Netopier v2 night-build report
 
 Observed 2026-09-03, Europe/Bratislava.
 
 ## Outcome
 
-**Verified local vertical backend.** Netopier v1 is a clean sibling repository and
+**Verified local vertical backend.** Netopier v2 is a clean sibling repository and
 does not import or execute v0 code. Miniflux collects public feeds, PostgreSQL with
 pgvector stores source-linked articles and derived state, FastEmbed generates local
 vectors, the story engine groups conservatively, and FastAPI serves read-only JSON.
 
-This is a usable v1 foundation, not a production release. The exact next product
+This is a usable v2 foundation, not a production release. The exact next product
 decision is Adam's ratification of the 22-item Slovak benchmark packet. The next
 engineering layer after ratification is a durable processing job/outbox model.
 
@@ -17,9 +17,9 @@ engineering layer after ratification is a durable processing job/outbox model.
 
 ```bash
 cd /Users/xvadur_mac/netopier
-bin/netopier-v1 up
-bin/netopier-v1 bootstrap
-bin/netopier-v1 once
+bin/netopier up
+bin/netopier bootstrap
+bin/netopier once
 ```
 
 The safe default leaves the continuous embedding worker stopped. `worker-on` enables

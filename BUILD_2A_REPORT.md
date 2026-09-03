@@ -61,7 +61,7 @@ editorial ratification.
 
 ## Runtime observed
 
-- Alembic is at `0006_event_lifecycle` in the local v1 database.
+- Alembic is at `0006_event_lifecycle` in the local v2 database.
 - 56 articles, 56 immutable initial revisions, 57 event candidates and 54 active events.
 - One article produced two candidates.
 - Three accepted cross-publisher `same_event` merges, all manually read back as correct:
@@ -87,7 +87,7 @@ editorial ratification.
 - Conflict extraction is represented in the contract but not yet populated by a
   contradiction detector.
 - Docker Desktop's 30 GiB internal disk was full during migration. Reproducible dangling
-  Netopier v1 build images were removed; no volumes or unrelated tagged images were
+  Netopier v2 build images were removed; no volumes or unrelated tagged images were
   deleted.
 
 ## Next smallest step

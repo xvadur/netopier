@@ -3,7 +3,7 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import create_engine, pool
 
-from netopier_v1.config import get_settings
+from netopier.config import get_settings
 
 config = context.config
 if config.config_file_name is not None:

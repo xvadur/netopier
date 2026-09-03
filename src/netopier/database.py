@@ -6,7 +6,7 @@ from psycopg import Connection
 from psycopg.rows import dict_row
 from psycopg_pool import ConnectionPool
 
-from netopier_v1.config import get_settings
+from netopier.config import get_settings
 
 type DbRow = dict[str, Any]
 type DbConnection = Connection[DbRow]

@@ -6,10 +6,10 @@ from uuid import UUID
 
 from psycopg.types.json import Jsonb
 
-from netopier_v1.config import Settings
-from netopier_v1.database import DbConnection
-from netopier_v1.domain import EventChanges, StoryChanges
-from netopier_v1.events import (
+from netopier.config import Settings
+from netopier.database import DbConnection
+from netopier.domain import EventChanges, StoryChanges
+from netopier.events import (
     EXTRACTOR_VERSION,
     ArticleRevision,
     DecisionStatus,
@@ -19,7 +19,7 @@ from netopier_v1.events import (
     RelationshipDecider,
     RelationshipDecision,
 )
-from netopier_v1.text import normalize_title
+from netopier.text import normalize_title
 
 ALGORITHM_FAMILY = "temporal-centroid-v1"
 RANKING_VERSION = "source-family-v1"

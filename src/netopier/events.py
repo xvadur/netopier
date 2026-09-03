@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import StrEnum
 
-from netopier_v1.text import normalize_title
+from netopier.text import normalize_title
 
 EXTRACTOR_VERSION = "rule-atomizer-v1"
 THRESHOLD_VERSION = "event-hybrid-v2"
