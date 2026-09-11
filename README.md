@@ -4,6 +4,17 @@ Clean, local-first Slovak public-source news-intelligence backend. Netopier v2
 replaced the retired v0 implementation and lives in the canonical `netopier`
 folder and GitHub repository.
 
+## Schválený smer frontendu — Vydanie
+
+Ďalší vývoj frontendu vychádza z prvého schváleného návrhu **Vydanie**:
+veľký názov NETOPIER, serifová typografia, čiernobiela fotografia, červené
+akcenty a novinové stĺpce. Výber návrhu je z 9. septembra 2026; rozhodnutie
+zaznamenať ho v GitHube bolo potvrdené 11. septembra 2026.
+
+**[Schválený obrázok, dizajnový smer a rozsah ďalšieho vývoja → DESIGN.md](DESIGN.md)**
+
+Ide o schválený základ na rozvíjanie; webová implementácia ešte nie je dokončená.
+
 The public newsroom direction, editorial relevance boundary, and daily output
 target are defined in [`PRODUCT_HYPOTHESIS.md`](PRODUCT_HYPOTHESIS.md).
 The supporting product and open-source precedent is captured in
