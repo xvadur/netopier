@@ -67,3 +67,19 @@ Automation may collect, cluster, score, summarize, and prepare bounded research.
 The operator owns the editorial policy, ratifies its changes, selects the three
 curated daily pieces, and explicitly authorizes publication. Every public output
 must remain traceable to its evidence and revision history.
+
+## Public-state sensing
+
+Publisher coverage is not the only event source. Netopier should also detect
+public acts directly from official records such as contracts, registries,
+procurement, corporate filings, and justice datasets. This is a proposed product
+extension, not an implemented capability or a claim that every source exposes a
+stable public API.
+
+Official records enter as immutable, source-linked revisions. Entity matches,
+diffs, anomaly scores, and alerts remain derived research leads until a human
+checks the source and context. They never become allegations or public stories
+automatically. The bounded source plan and founding editorial case are recorded
+in `/Users/xvadur_mac/hriech/research/editorial/STATE_READING_EDITORIAL_BRIEF_2026-09-03.md`.
+Hriech owns the media-criticism case and its public presentation; Netopier owns
+the public-source collection and event-intelligence machinery that can supply it.

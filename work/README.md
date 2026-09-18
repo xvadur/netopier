@@ -1,0 +1,1 @@
+Front projektu. Jeden súbor = jedno issue. Stavy: draft → ready → running → review → blocked → done (presun do done/). Receipt píše /handoff. Odvodené sekcie STATUS.md regeneruje `node ~/xvadur_system/bin/xv status`.

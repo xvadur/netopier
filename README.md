@@ -15,10 +15,28 @@ zaznamenať ho v GitHube bolo potvrdené 11. septembra 2026.
 
 Ide o schválený základ na rozvíjanie; webová implementácia ešte nie je dokončená.
 
-The public newsroom direction, editorial relevance boundary, and daily output
-target are defined in [`PRODUCT_HYPOTHESIS.md`](PRODUCT_HYPOTHESIS.md).
-The supporting product and open-source precedent is captured in
-[`docs/research/AI_NEWSROOM_AND_NATURAL20_TEARDOWN_2026-09-03.md`](docs/research/AI_NEWSROOM_AND_NATURAL20_TEARDOWN_2026-09-03.md).
+## Local state — 2026-09-07
+
+This is the retained, usable v2 foundation. The retired v0 was deleted separately;
+its code and runtime must not be restored into this project.
+
+The Mac cleanup intentionally removed Colima and stopped the local container
+runtime. The addresses below describe the configured services; they are not
+currently running. The private database recovery export is preserved in
+`/Users/xvadur_mac/Archive/mac-cleanup-2026-09-07/docker-recovery/`.
+Starting the stack again requires an explicit decision to provision a container
+engine. Previous integration results in `docs/reports/` remain dated evidence.
+
+`bin/netopier` now resolves the project directory when called from another folder.
+The local CLI routing and secret scan were checked on 2026-09-07; a new live
+RSS-to-feed verification awaits the container runtime. The Python package requires
+Python 3.12; the system Python 3.9 is insufficient for the application tests.
+
+Current exploration of public sources, monitoring and research lives in
+[`docs/DISCOVERY.md`](docs/DISCOVERY.md). The public-newsroom output hypothesis
+is documented separately in
+[`docs/PRODUCT_HYPOTHESIS.md`](docs/PRODUCT_HYPOTHESIS.md); its targets are a
+proposal, not proof of implemented output. See the [documentation index](docs/README.md).
 
 ## Runtime
 
@@ -68,6 +86,6 @@ docker compose run --rm api python benchmarks/run_benchmark.py
 docker compose run --rm api python benchmarks/run_event_benchmark.py
 ```
 
-See [ARCHITECTURE.md](ARCHITECTURE.md), [DECISIONS.md](DECISIONS.md), and
+See [architecture](docs/ARCHITECTURE.md), [decisions](docs/DECISIONS.md), and
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Benchmark inputs and the latest
 measured report live under [`benchmarks/`](benchmarks/).
